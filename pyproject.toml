@@ -1,0 +1,49 @@
+[project]
+name = "foco-social"
+version = "0.1.0"
+description = "Agente de detección de tópicos en redes sociales (LangGraph + LLMs)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langchain>=1.0",
+    "langchain-core>=1.0",
+    "langchain-anthropic>=1.7",
+    "langgraph>=1.0",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "python-dotenv>=1.0",
+    "duckdb>=1.1",
+    "pandas>=2.1",
+    "scikit-learn>=1.4",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+# Otros proveedores de LLM (se eligen con LLM_PROVIDER en .env)
+openai = ["langchain-openai>=1.0"]
+ollama = ["langchain-ollama>=1.0"]
+# Embeddings semánticos multilingües (descarga torch, ~1-2 GB)
+embeddings = ["sentence-transformers>=3.0"]
+# TOPIC_MODEL=bertopic (incluye los embeddings)
+bertopic = ["bertopic>=0.16", "sentence-transformers>=3.0", "umap-learn>=0.5"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+foco = "foco_social.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/foco_social"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+ignore = ["SIM905"]  # listas de stopwords escritas como string.split()

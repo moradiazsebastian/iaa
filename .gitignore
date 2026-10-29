@@ -1,0 +1,25 @@
+# Lista blanca: se ignora todo lo de la raíz y solo se versiona lo que el equipo necesita.
+# Para agregar una carpeta o archivo nuevo al repo, sumarlo con "!" acá abajo.
+/*
+
+!/.github/
+!/src/
+!/tests/
+!/docs/
+!/data/
+!/.env.example
+!/.gitignore
+!/Makefile
+!/pyproject.toml
+!/README.md
+
+# data/: solo el dataset sintético y su README. Los datos reales quedan locales.
+/data/*
+!/data/sample/
+!/data/README.md
+
+# Archivos generados dentro de las carpetas versionadas
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env

@@ -1,0 +1,361 @@
+id,created_at,author,author_followers,text,likes,retweets,theme,topic,subtopic
+t00000,2026-10-01 00:13:00,usuario_013,191,"El clásico entre Racing y Talleres fue durísimo, muchas amarillas ...",1,2,futbol,Fútbol,Liga local
+t00001,2026-10-01 01:47:00,usuario_077,325,"La campaña de Carlos Benítez promete un millón de empleos, ¿de dónde?",0,0,politica,Economía en campaña,Empleo y salarios
+t00002,2026-10-01 02:05:00,usuario_014,4316,"Martina Ríos habló de reforma tributaria en el debate, habrá que ver los números !!",0,5,politica,Debate presidencial,Propuestas económicas en el debate
+t00003,2026-10-01 02:14:00,usuario_112,187,Jubilados y salarios: el gran ausente en los spots de campaña 👏,0,0,politica,Economía en campaña,Empleo y salarios
+t00004,2026-10-01 02:26:00,usuario_062,284,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos,17,0,politica,Economía en campaña,Empleo y salarios
+t00005,2026-10-01 02:32:00,usuario_052,601,Primera vez con voto electrónico en Córdoba y la verdad fue muy fácil votar,0,1,politica,Fraude y transparencia electoral,Voto electrónico
+t00006,2026-10-01 02:37:00,usuario_088,236,Fiscales del Partido del Progreso reportan irregularidades en el conteo de votos en Mendoza ...,11,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00007,2026-10-01 03:10:00,usuario_013,191,Primera vez con voto electrónico en Salta y la verdad fue muy fácil votar ...,1,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00008,2026-10-01 03:27:00,usuario_087,797,"Martina Ríos ganó el debate presidencial, clarísimo. Los demás no tuvieron argumentos",3,2,politica,Debate presidencial,Desempeño de los candidatos
+t00009,2026-10-01 03:28:00,usuario_000,597,La boleta única en papel es más segura que el voto electrónico,1,3,politica,Fraude y transparencia electoral,Voto electrónico
+t00010,2026-10-01 03:32:00,usuario_013,191,La boleta única en papel es más segura que el voto electrónico,2,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00011,2026-10-01 03:45:00,usuario_073,1271,Salarios por el piso y los candidatos discutiendo boludeces,0,1,politica,Economía en campaña,Empleo y salarios
+t00012,2026-10-01 05:01:00,usuario_036,58,"El desempleo en Buenos Aires es del 6%, que alguno de los candidatos lo mencione",0,3,politica,Economía en campaña,Empleo y salarios
+t00013,2026-10-01 05:05:00,usuario_144,38,"El dato de inflación sale justo antes de las elecciones, impacto directo en el voto",4,1,politica,Economía en campaña,Inflación
+t00014,2026-10-01 05:13:00,usuario_103,289,Expertos en seguridad piden auditar el software del voto electrónico,0,1,politica,Fraude y transparencia electoral,Voto electrónico
+t00015,2026-10-01 05:56:00,usuario_078,694,Opina Datos muestra a Julián Paredes primero en Buenos Aires con 38% de los votos,0,2,politica,Encuestas,Resultados de encuestas
+t00016,2026-10-01 06:07:00,usuario_105,671,"Inflación, inflación, inflación. Es lo único que le importa al votante",0,0,politica,Economía en campaña,Inflación
+t00017,2026-10-01 06:10:00,usuario_029,3303,¿Quién paga la encuesta de Consultora Federal? Siempre favorece a Julián Paredes,3,1,politica,Encuestas,Críticas a encuestadoras
+t00018,2026-10-01 07:54:00,usuario_145,698,En Córdoba hubo máquinas de voto electrónico que no arrancaban ...,0,3,politica,Fraude y transparencia electoral,Voto electrónico
+t00019,2026-10-01 08:05:00,usuario_083,97,"No crean en las encuestas, en 2023 erraron por diez puntos",1,1,politica,Encuestas,Críticas a encuestadoras
+t00020,2026-10-01 08:16:00,usuario_106,1766,Encuesta: el 33% de los indecisos todavía no sabe a quién votar,0,0,politica,Encuestas,Resultados de encuestas
+t00021,2026-10-01 08:20:00,usuario_031,506,"No confío en el voto electrónico, cualquier sistema se puede hackear",0,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00022,2026-10-01 08:37:00,usuario_062,284,Opina Datos muestra a Carlos Benítez primero en Buenos Aires con 45% de los votos jaja,1,1,politica,Encuestas,Resultados de encuestas
+t00023,2026-10-01 08:38:00,usuario_080,638,"Qué partido jugó Independiente, golazo en el último minuto",0,0,futbol,Fútbol,Liga local
+t00024,2026-10-01 08:39:00,usuario_120,2386,Encuesta: el 42% de los indecisos todavía no sabe a quién votar,0,0,politica,Encuestas,Resultados de encuestas
+t00025,2026-10-01 09:27:00,usuario_038,67,"Hablar de fraude sin pruebas daña la democracia, Julián Paredes debería saberlo !!",1,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00026,2026-10-01 09:35:00,usuario_007,6508,"Carlos Benítez propone una reforma laboral en la campaña, los sindicatos ya dicen que no 👏",1,2,politica,Economía en campaña,Empleo y salarios
+t00027,2026-10-01 10:13:00,usuario_074,383,Nueva encuesta de Opina Datos: Carlos Benítez lidera con 37% de intención de voto,0,0,politica,Encuestas,Resultados de encuestas
+t00028,2026-10-01 10:41:00,usuario_044,574,"Las propuestas económicas del debate fueron puro humo, ningún plan serio",0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00029,2026-10-01 11:12:00,usuario_141,329,Lo único concreto del debate fue el plan fiscal de Julián Paredes #DebatePresidencial,0,2,politica,Debate presidencial,Propuestas económicas en el debate
+t00030,2026-10-01 11:51:00,usuario_094,46,Con esta inflación ningún candidato tiene un plan creíble para la campaña,1,0,politica,Economía en campaña,Inflación
+t00031,2026-10-01 11:55:00,usuario_105,671,El cierre de Julián Paredes en el debate fue lo mejor de la noche,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00032,2026-10-01 11:57:00,usuario_017,141,Jubilados y salarios: el gran ausente en los spots de campaña ...,3,0,politica,Economía en campaña,Empleo y salarios
+t00033,2026-10-01 11:59:00,usuario_023,14,"Hablar de fraude sin pruebas daña la democracia, Julián Paredes debería saberlo",7,3,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00034,2026-10-01 12:25:00,usuario_149,213,Los precios del supermercado suben todas las semanas y la campaña habla de otra cosa,1,0,politica,Economía en campaña,Inflación
+t00035,2026-10-01 12:32:00,usuario_012,16298,Las encuestadoras como Consultora Federal deberían publicar su metodología,0,1,politica,Encuestas,Críticas a encuestadoras
+t00036,2026-10-01 12:33:00,usuario_062,284,Fiscales del Partido del Progreso reportan irregularidades en el conteo de votos en Córdoba 🤦,0,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00037,2026-10-01 13:24:00,usuario_065,272,"Martina Ríos propone una reforma laboral en la campaña, los sindicatos ya dicen que no",0,0,politica,Economía en campaña,Empleo y salarios
+t00038,2026-10-01 13:48:00,usuario_005,996,Lo único concreto del debate fue el plan fiscal de Martina Ríos #DebatePresidencial,2,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00039,2026-10-01 14:00:00,usuario_045,1928,"El arbitraje en el partido de Lanús fue un desastre, penal clarísimo no cobrado 👏",0,0,futbol,Fútbol,Liga local
+t00040,2026-10-01 14:54:00,usuario_075,302,"Hablar de fraude sin pruebas daña la democracia, Martina Ríos debería saberlo",2,1,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00041,2026-10-01 15:18:00,usuario_037,1184,"La campaña de Martina Ríos promete un millón de empleos, ¿de dónde?",0,0,politica,Economía en campaña,Empleo y salarios
+t00042,2026-10-01 15:19:00,usuario_121,770,Las encuestadoras como Opina Datos deberían publicar su metodología,1,1,politica,Encuestas,Críticas a encuestadoras
+t00043,2026-10-01 15:30:00,usuario_061,6547,Expertos en seguridad piden auditar el software del voto electrónico ...,2,1,politica,Fraude y transparencia electoral,Voto electrónico
+t00044,2026-10-01 16:17:00,usuario_018,89,¿Alguien entendió qué quiso decir Martina Ríos en el debate? Muy flojo el candidato,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00045,2026-10-01 16:19:00,usuario_015,4226,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos,0,0,politica,Economía en campaña,Empleo y salarios
+t00046,2026-10-01 17:15:00,usuario_056,137,¿Alguien entendió qué quiso decir Carlos Benítez en el debate? Muy flojo el candidato,1,0,politica,Debate presidencial,Desempeño de los candidatos
+t00047,2026-10-01 17:17:00,usuario_091,123,"Las encuestas otra vez le pifian, Consultora Federal trabaja para el Alianza Ciudadana",2,0,politica,Encuestas,Críticas a encuestadoras
+t00048,2026-10-01 17:56:00,usuario_037,1184,En el debate Martina Ríos prometió bajar impuestos pero no dijo cómo lo va a financiar,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00049,2026-10-01 17:59:00,usuario_085,176,Ningún candidato explicó en el debate cómo van a bajar el déficit,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00050,2026-10-01 18:02:00,usuario_098,1397,"El clásico entre Lanús y Talleres fue durísimo, muchas amarillas",0,2,futbol,Fútbol,Liga local
+t00051,2026-10-01 18:11:00,usuario_002,3003,Jubilados y salarios: el gran ausente en los spots de campaña,0,0,politica,Economía en campaña,Empleo y salarios
+t00052,2026-10-01 18:28:00,usuario_097,8866,Mercado de pases: Lanús busca un nueve para el próximo torneo,2,2,futbol,Fútbol,Liga local
+t00053,2026-10-01 19:27:00,usuario_043,87,"Qué partido jugó Independiente, golazo en el último minuto",0,3,futbol,Fútbol,Liga local
+t00054,2026-10-01 19:41:00,usuario_111,1613,La inflación de 5% mensual es el tema central de la campaña de Carlos Benítez,2,0,politica,Economía en campaña,Inflación
+t00055,2026-10-01 19:52:00,usuario_010,4478,"Según Tendencias SA, Julián Paredes sube 8 puntos y se acerca al balotaje",0,1,politica,Encuestas,Resultados de encuestas
+t00056,2026-10-01 20:04:00,usuario_073,1271,"Última encuesta antes de la veda: Martina Ríos 26%, Julián Paredes 38%",0,0,politica,Encuestas,Resultados de encuestas
+t00057,2026-10-01 20:34:00,usuario_039,61,La propuesta de dolarización de Martina Ríos en el debate no cierra por ningún lado 👏,0,1,politica,Debate presidencial,Propuestas económicas en el debate
+t00058,2026-10-01 20:45:00,usuario_050,346,En el debate Martina Ríos se la pasó atacando y no propuso nada #DebatePresidencial,1,2,politica,Debate presidencial,Desempeño de los candidatos
+t00059,2026-10-01 22:43:00,usuario_134,166,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos !!,0,0,politica,Economía en campaña,Empleo y salarios
+t00060,2026-10-01 22:56:00,usuario_095,91,"Videos de urnas abiertas en Córdoba, la justicia electoral tiene que investigar el fraude !!",1,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00061,2026-10-01 23:17:00,usuario_092,790,"Talleres no puede ganar de local hace cinco fechas, que se vaya el técnico",0,0,futbol,Fútbol,Liga local
+t00062,2026-10-01 23:45:00,usuario_017,141,Fiscales del Alianza Ciudadana reportan irregularidades en el conteo de votos en Mendoza,0,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00063,2026-10-01 23:58:00,usuario_035,1615,Jubilados y salarios: el gran ausente en los spots de campaña,1,0,politica,Economía en campaña,Empleo y salarios
+t00064,2026-10-02 00:36:00,usuario_033,283,"Carlos Benítez ganó el debate presidencial, clarísimo. Los demás no tuvieron argumentos",6,0,politica,Debate presidencial,Desempeño de los candidatos
+t00065,2026-10-02 00:43:00,usuario_130,270,Con esta inflación ningún candidato tiene un plan creíble para la campaña ...,0,0,politica,Economía en campaña,Inflación
+t00066,2026-10-02 00:43:00,usuario_015,4226,"Racing no puede ganar de local hace cinco fechas, que se vaya el técnico",0,0,futbol,Fútbol,Liga local
+t00067,2026-10-02 02:02:00,usuario_147,743,"Carlos Benítez propone una reforma laboral en la campaña, los sindicatos ya dicen que no",1,0,politica,Economía en campaña,Empleo y salarios
+t00068,2026-10-02 02:33:00,usuario_119,12,Mercado de pases: Talleres busca un nueve para el próximo torneo jaja,0,1,futbol,Fútbol,Liga local
+t00069,2026-10-02 03:21:00,usuario_149,213,"Si pierde Julián Paredes van a decir que hubo fraude, ya lo están instalando ...",7,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00070,2026-10-02 03:54:00,usuario_069,86,"No crean en las encuestas, en 2023 erraron por diez puntos",0,0,politica,Encuestas,Críticas a encuestadoras
+t00071,2026-10-02 03:58:00,usuario_022,1140,"No crean en las encuestas, en 2023 erraron por diez puntos !!",0,0,politica,Encuestas,Críticas a encuestadoras
+t00072,2026-10-02 05:12:00,usuario_103,289,Vamos Lanús!!! A seguir sumando en la tabla,0,1,futbol,Fútbol,Liga local
+t00073,2026-10-02 05:33:00,usuario_057,156,Lo único concreto del debate fue el plan fiscal de Carlos Benítez #DebatePresidencial !!,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00074,2026-10-02 05:44:00,usuario_012,16298,"Talleres no puede ganar de local hace cinco fechas, que se vaya el técnico",0,0,futbol,Fútbol,Liga local
+t00075,2026-10-02 05:50:00,usuario_014,4316,"Qué partido jugó Independiente, golazo en el último minuto",1,12,futbol,Fútbol,Liga local
+t00076,2026-10-02 07:17:00,usuario_049,931,Con esta inflación ningún candidato tiene un plan creíble para la campaña 😡,0,1,politica,Economía en campaña,Inflación
+t00077,2026-10-02 07:30:00,usuario_082,425,Primera vez con voto electrónico en Santa Fe y la verdad fue muy fácil votar,2,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00078,2026-10-02 08:09:00,usuario_118,1152,"No confío en el voto electrónico, cualquier sistema se puede hackear 😡",0,2,politica,Fraude y transparencia electoral,Voto electrónico
+t00079,2026-10-02 08:23:00,usuario_089,1051,"Según Consultora Federal, Carlos Benítez sube 4 puntos y se acerca al balotaje",0,0,politica,Encuestas,Resultados de encuestas
+t00080,2026-10-02 08:35:00,usuario_131,790,En Salta hubo máquinas de voto electrónico que no arrancaban,0,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00081,2026-10-02 11:00:00,usuario_091,123,Con esta inflación ningún candidato tiene un plan creíble para la campaña,1,0,politica,Economía en campaña,Inflación
+t00082,2026-10-02 11:26:00,usuario_141,329,Nueva encuesta de Consultora Federal: Martina Ríos lidera con 43% de intención de voto,1,0,politica,Encuestas,Resultados de encuestas
+t00083,2026-10-02 11:36:00,usuario_111,1613,"La campaña de Martina Ríos promete un millón de empleos, ¿de dónde? ...",2,0,politica,Economía en campaña,Empleo y salarios
+t00084,2026-10-02 11:55:00,usuario_027,1821,"El clásico entre Talleres y Independiente fue durísimo, muchas amarillas",0,1,futbol,Fútbol,Liga local
+t00085,2026-10-02 12:02:00,usuario_081,21,Fiscales del Alianza Ciudadana reportan irregularidades en el conteo de votos en Buenos Aires,0,2,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00086,2026-10-02 12:14:00,usuario_132,14,"El arbitraje en el partido de Talleres fue un desastre, penal clarísimo no cobrado",0,0,futbol,Fútbol,Liga local
+t00087,2026-10-02 12:47:00,usuario_091,123,Jubilados y salarios: el gran ausente en los spots de campaña,0,0,politica,Economía en campaña,Empleo y salarios
+t00088,2026-10-02 13:42:00,usuario_015,4226,"Según Consultora Federal, Martina Ríos sube 9 puntos y se acerca al balotaje",0,0,politica,Encuestas,Resultados de encuestas
+t00089,2026-10-02 14:48:00,usuario_144,38,"Videos de urnas abiertas en Santa Fe, la justicia electoral tiene que investigar el fraude",0,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00090,2026-10-02 15:16:00,usuario_103,289,Denuncian fraude en mesas de Salta: faltaban boletas del Alianza Ciudadana 😡,1,1,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00091,2026-10-02 15:19:00,usuario_004,84,"Independiente no puede ganar de local hace cinco fechas, que se vaya el técnico 🤦",1,0,futbol,Fútbol,Liga local
+t00092,2026-10-02 15:21:00,usuario_003,323,El cierre de Julián Paredes en el debate fue lo mejor de la noche !!,0,1,politica,Debate presidencial,Desempeño de los candidatos
+t00093,2026-10-02 15:49:00,usuario_113,204,"La campaña de Julián Paredes promete un millón de empleos, ¿de dónde?",0,4,politica,Economía en campaña,Empleo y salarios
+t00094,2026-10-02 15:52:00,usuario_085,176,Ningún candidato explicó en el debate cómo van a bajar el déficit,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00095,2026-10-02 16:44:00,usuario_104,301,Opina Datos muestra a Carlos Benítez primero en Santa Fe con 45% de los votos,0,0,politica,Encuestas,Resultados de encuestas
+t00096,2026-10-02 17:40:00,usuario_095,91,Ningún candidato explicó en el debate cómo van a bajar el déficit,1,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00097,2026-10-02 18:25:00,usuario_123,60,"El clásico entre Racing y Lanús fue durísimo, muchas amarillas",1,3,futbol,Fútbol,Liga local
+t00098,2026-10-02 18:35:00,usuario_091,123,"Inflación, inflación, inflación. Es lo único que le importa al votante 👏",2,0,politica,Economía en campaña,Inflación
+t00099,2026-10-02 19:02:00,usuario_023,14,"Videos de urnas abiertas en Mendoza, la justicia electoral tiene que investigar el fraude 🤦",2,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00100,2026-10-02 19:14:00,usuario_061,6547,¿Alguien entendió qué quiso decir Julián Paredes en el debate? Muy flojo el candidato jaja,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00101,2026-10-02 19:47:00,usuario_141,329,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos ...,0,0,politica,Economía en campaña,Empleo y salarios
+t00102,2026-10-02 19:56:00,usuario_096,263,"Hablar de fraude sin pruebas daña la democracia, Martina Ríos debería saberlo 👏",1,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00103,2026-10-02 20:22:00,usuario_084,900,Nueva encuesta de Tendencias SA: Julián Paredes lidera con 29% de intención de voto 🤦,1,1,politica,Encuestas,Resultados de encuestas
+t00104,2026-10-02 21:25:00,usuario_090,23,"Encuestas truchas para instalar a Julián Paredes, todos lo sabemos 👏",1,0,politica,Encuestas,Críticas a encuestadoras
+t00105,2026-10-02 21:35:00,usuario_066,2765,"Hablar de fraude sin pruebas daña la democracia, Carlos Benítez debería saberlo",0,1,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00106,2026-10-02 21:36:00,usuario_078,694,"El voto electrónico en Santa Fe funcionó sin problemas, filas cortas y rápido",0,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00107,2026-10-02 21:38:00,usuario_044,574,"Videos de urnas abiertas en Córdoba, la justicia electoral tiene que investigar el fraude !!",18,2,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00108,2026-10-02 21:39:00,usuario_016,726,Muestra de 500 casos y quieren predecir una elección nacional. Encuestas berretas,0,0,politica,Encuestas,Críticas a encuestadoras
+t00109,2026-10-02 21:52:00,usuario_012,16298,Denuncian fraude en mesas de Córdoba: faltaban boletas del Alianza Ciudadana,7,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00110,2026-10-02 22:02:00,usuario_053,122,En Mendoza hubo máquinas de voto electrónico que no arrancaban 😡,1,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00111,2026-10-02 22:13:00,usuario_090,23,"No crean en las encuestas, en 2023 erraron por diez puntos",0,0,politica,Encuestas,Críticas a encuestadoras
+t00112,2026-10-02 22:25:00,usuario_046,2055,"Qué nervioso se lo vio a Martina Ríos en el debate de anoche, no respondió nada",0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00113,2026-10-02 23:28:00,usuario_066,2765,"Hablar de fraude sin pruebas daña la democracia, Carlos Benítez debería saberlo",0,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00114,2026-10-02 23:32:00,usuario_040,25,"Última encuesta antes de la veda: Martina Ríos 27%, Julián Paredes 37%",2,0,politica,Encuestas,Resultados de encuestas
+t00115,2026-10-02 23:34:00,usuario_004,84,La propuesta de dolarización de Carlos Benítez en el debate no cierra por ningún lado,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00116,2026-10-02 23:43:00,usuario_100,82,"El dato de inflación sale justo antes de las elecciones, impacto directo en el voto",0,0,politica,Economía en campaña,Inflación
+t00117,2026-10-03 00:26:00,usuario_024,91,Julián Paredes promete inflación de un dígito en un año. Ya lo escuchamos antes,0,0,politica,Economía en campaña,Inflación
+t00118,2026-10-03 00:50:00,usuario_006,62,Mercado de pases: Racing busca un nueve para el próximo torneo,0,3,futbol,Fútbol,Liga local
+t00119,2026-10-03 01:07:00,usuario_139,255,¿Quién paga la encuesta de Consultora Federal? Siempre favorece a Julián Paredes,1,0,politica,Encuestas,Críticas a encuestadoras
+t00120,2026-10-03 01:46:00,usuario_122,2272,En el debate Carlos Benítez prometió bajar impuestos pero no dijo cómo lo va a financiar,3,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00121,2026-10-03 02:53:00,usuario_047,230,Muestra de 500 casos y quieren predecir una elección nacional. Encuestas berretas,1,0,politica,Encuestas,Críticas a encuestadoras
+t00122,2026-10-03 03:05:00,usuario_035,1615,Las encuestadoras como Consultora Federal deberían publicar su metodología,0,0,politica,Encuestas,Críticas a encuestadoras
+t00123,2026-10-03 03:06:00,usuario_066,2765,"El dato de inflación sale justo antes de las elecciones, impacto directo en el voto",0,0,politica,Economía en campaña,Inflación
+t00124,2026-10-03 03:19:00,usuario_022,1140,Primera vez con voto electrónico en Salta y la verdad fue muy fácil votar,0,4,politica,Fraude y transparencia electoral,Voto electrónico
+t00125,2026-10-03 04:18:00,usuario_047,230,En el debate Carlos Benítez se la pasó atacando y no propuso nada #DebatePresidencial,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00126,2026-10-03 04:25:00,usuario_124,1006,Lo único concreto del debate fue el plan fiscal de Martina Ríos #DebatePresidencial,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00127,2026-10-03 06:14:00,usuario_127,39,Primera vez con voto electrónico en Buenos Aires y la verdad fue muy fácil votar,1,1,politica,Fraude y transparencia electoral,Voto electrónico
+t00128,2026-10-03 06:15:00,usuario_076,20,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos jaja,0,0,politica,Economía en campaña,Empleo y salarios
+t00129,2026-10-03 06:39:00,usuario_125,732,"Según Tendencias SA, Julián Paredes sube 6 puntos y se acerca al balotaje",0,2,politica,Encuestas,Resultados de encuestas
+t00130,2026-10-03 06:41:00,usuario_035,1615,La boleta única en papel es más segura que el voto electrónico 👏,0,17,politica,Fraude y transparencia electoral,Voto electrónico
+t00131,2026-10-03 07:10:00,usuario_054,283,La encuesta de Opina Datos en Santa Fe da empate técnico entre Martina Ríos y Julián Paredes,3,0,politica,Encuestas,Resultados de encuestas
+t00132,2026-10-03 07:29:00,usuario_130,270,"Videos de urnas abiertas en Buenos Aires, la justicia electoral tiene que investigar el fraude",20,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00133,2026-10-03 07:51:00,usuario_051,308,Vamos Independiente!!! A seguir sumando en la tabla,0,4,futbol,Fútbol,Liga local
+t00134,2026-10-03 08:27:00,usuario_033,283,Mercado de pases: Lanús busca un nueve para el próximo torneo,1,0,futbol,Fútbol,Liga local
+t00135,2026-10-03 08:30:00,usuario_052,601,Las encuestadoras como Tendencias SA deberían publicar su metodología 👏,2,0,politica,Encuestas,Críticas a encuestadoras
+t00136,2026-10-03 08:44:00,usuario_025,662,"Terrible el papelón de Martina Ríos en el debate, se olvidó lo que tenía que decir",1,0,politica,Debate presidencial,Desempeño de los candidatos
+t00137,2026-10-03 10:16:00,usuario_000,597,Muestra de 500 casos y quieren predecir una elección nacional. Encuestas berretas,0,0,politica,Encuestas,Críticas a encuestadoras
+t00138,2026-10-03 10:50:00,usuario_015,4226,Los precios del supermercado suben todas las semanas y la campaña habla de otra cosa,3,0,politica,Economía en campaña,Inflación
+t00139,2026-10-03 11:31:00,usuario_144,38,¿Alguien entendió qué quiso decir Martina Ríos en el debate? Muy flojo el candidato,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00140,2026-10-03 11:40:00,usuario_090,23,Carlos Benítez promete inflación de un dígito en un año. Ya lo escuchamos antes,5,0,politica,Economía en campaña,Inflación
+t00141,2026-10-03 11:43:00,usuario_002,3003,"No crean en las encuestas, en 2023 erraron por diez puntos 👏",0,0,politica,Encuestas,Críticas a encuestadoras
+t00142,2026-10-03 11:45:00,usuario_010,4478,"Inflación, inflación, inflación. Es lo único que le importa al votante",2,0,politica,Economía en campaña,Inflación
+t00143,2026-10-03 11:54:00,usuario_014,4316,"Si pierde Martina Ríos van a decir que hubo fraude, ya lo están instalando",1,13,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00144,2026-10-03 12:02:00,usuario_136,69,"El dato de inflación sale justo antes de las elecciones, impacto directo en el voto",0,0,politica,Economía en campaña,Inflación
+t00145,2026-10-03 12:21:00,usuario_133,955,"Según Consultora Federal, Carlos Benítez sube 7 puntos y se acerca al balotaje 👏",0,0,politica,Encuestas,Resultados de encuestas
+t00146,2026-10-03 12:26:00,usuario_054,283,En Córdoba hubo máquinas de voto electrónico que no arrancaban ...,1,1,politica,Fraude y transparencia electoral,Voto electrónico
+t00147,2026-10-03 12:51:00,usuario_096,263,"Inflación, inflación, inflación. Es lo único que le importa al votante",0,0,politica,Economía en campaña,Inflación
+t00148,2026-10-03 13:37:00,usuario_135,275,Tendencias SA muestra a Carlos Benítez primero en Buenos Aires con 32% de los votos,1,0,politica,Encuestas,Resultados de encuestas
+t00149,2026-10-03 13:46:00,usuario_067,269,"Hablar de fraude sin pruebas daña la democracia, Julián Paredes debería saberlo !!",3,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00150,2026-10-03 14:47:00,usuario_056,137,"El dato de inflación sale justo antes de las elecciones, impacto directo en el voto !!",2,0,politica,Economía en campaña,Inflación
+t00151,2026-10-03 16:01:00,usuario_073,1271,El cierre de Julián Paredes en el debate fue lo mejor de la noche,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00152,2026-10-03 16:04:00,usuario_032,3913,Jubilados y salarios: el gran ausente en los spots de campaña 🤦,1,5,politica,Economía en campaña,Empleo y salarios
+t00153,2026-10-03 18:14:00,usuario_122,2272,Encuesta: el 31% de los indecisos todavía no sabe a quién votar,1,1,politica,Encuestas,Resultados de encuestas
+t00154,2026-10-03 18:49:00,usuario_012,16298,Encuesta: el 27% de los indecisos todavía no sabe a quién votar,2,0,politica,Encuestas,Resultados de encuestas
+t00155,2026-10-03 19:17:00,usuario_075,302,Las encuestadoras como Consultora Federal deberían publicar su metodología,1,0,politica,Encuestas,Críticas a encuestadoras
+t00156,2026-10-03 19:18:00,usuario_049,931,Encuesta: el 42% de los indecisos todavía no sabe a quién votar,0,0,politica,Encuestas,Resultados de encuestas
+t00157,2026-10-03 20:02:00,usuario_134,166,"Hablar de fraude sin pruebas daña la democracia, Julián Paredes debería saberlo",1,1,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00158,2026-10-03 20:09:00,usuario_071,130,Opina Datos muestra a Martina Ríos primero en Buenos Aires con 29% de los votos,13,0,politica,Encuestas,Resultados de encuestas
+t00159,2026-10-03 20:13:00,usuario_149,213,"El desempleo en Santa Fe es del 6%, que alguno de los candidatos lo mencione",0,2,politica,Economía en campaña,Empleo y salarios
+t00160,2026-10-03 20:18:00,usuario_147,743,Martina Ríos promete inflación de un dígito en un año. Ya lo escuchamos antes,1,8,politica,Economía en campaña,Inflación
+t00161,2026-10-03 20:56:00,usuario_013,191,En el debate Carlos Benítez se la pasó atacando y no propuso nada #DebatePresidencial,9,0,politica,Debate presidencial,Desempeño de los candidatos
+t00162,2026-10-03 21:15:00,usuario_149,213,"Inflación, inflación, inflación. Es lo único que le importa al votante jaja",0,0,politica,Economía en campaña,Inflación
+t00163,2026-10-03 21:17:00,usuario_123,60,"El dato de inflación sale justo antes de las elecciones, impacto directo en el voto",40,0,politica,Economía en campaña,Inflación
+t00164,2026-10-03 22:37:00,usuario_032,3913,"No confío en el voto electrónico, cualquier sistema se puede hackear !!",1,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00165,2026-10-03 22:37:00,usuario_058,16,Los precios del supermercado suben todas las semanas y la campaña habla de otra cosa,0,0,politica,Economía en campaña,Inflación
+t00166,2026-10-03 23:45:00,usuario_115,976,"Las encuestas otra vez le pifian, Tendencias SA trabaja para el Alianza Ciudadana 🤦",0,2,politica,Encuestas,Críticas a encuestadoras
+t00167,2026-10-04 00:07:00,usuario_075,302,La boleta única en papel es más segura que el voto electrónico,0,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00168,2026-10-04 00:12:00,usuario_003,323,"Qué nervioso se lo vio a Julián Paredes en el debate de anoche, no respondió nada",0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00169,2026-10-04 00:35:00,usuario_014,4316,"Martina Ríos propone una reforma laboral en la campaña, los sindicatos ya dicen que no",0,1,politica,Economía en campaña,Empleo y salarios
+t00170,2026-10-04 00:54:00,usuario_051,308,La boleta única en papel es más segura que el voto electrónico 🤦,2,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00171,2026-10-04 02:27:00,usuario_030,171,"Qué partido jugó Independiente, golazo en el último minuto",0,0,futbol,Fútbol,Liga local
+t00172,2026-10-04 02:54:00,usuario_032,3913,¿Alguien entendió qué quiso decir Carlos Benítez en el debate? Muy flojo el candidato,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00173,2026-10-04 03:01:00,usuario_147,743,Con esta inflación ningún candidato tiene un plan creíble para la campaña,0,15,politica,Economía en campaña,Inflación
+t00174,2026-10-04 03:11:00,usuario_078,694,Expertos en seguridad piden auditar el software del voto electrónico ...,0,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00175,2026-10-04 03:42:00,usuario_000,597,La propuesta de dolarización de Carlos Benítez en el debate no cierra por ningún lado,4,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00176,2026-10-04 03:43:00,usuario_015,4226,"Encuestas truchas para instalar a Julián Paredes, todos lo sabemos !!",4,0,politica,Encuestas,Críticas a encuestadoras
+t00177,2026-10-04 05:12:00,usuario_073,1271,"Qué nervioso se lo vio a Martina Ríos en el debate de anoche, no respondió nada 👏",1,0,politica,Debate presidencial,Desempeño de los candidatos
+t00178,2026-10-04 06:01:00,usuario_120,2386,Nueva encuesta de Consultora Federal: Julián Paredes lidera con 26% de intención de voto,0,2,politica,Encuestas,Resultados de encuestas
+t00179,2026-10-04 06:26:00,usuario_051,308,"Última encuesta antes de la veda: Julián Paredes 30%, Carlos Benítez 33%",0,0,politica,Encuestas,Resultados de encuestas
+t00180,2026-10-04 06:32:00,usuario_119,12,El cierre de Carlos Benítez en el debate fue lo mejor de la noche 🤦,1,0,politica,Debate presidencial,Desempeño de los candidatos
+t00181,2026-10-04 07:03:00,usuario_106,1766,Lo único concreto del debate fue el plan fiscal de Martina Ríos #DebatePresidencial,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00182,2026-10-04 07:41:00,usuario_003,323,Las encuestadoras como Consultora Federal deberían publicar su metodología,0,1,politica,Encuestas,Críticas a encuestadoras
+t00183,2026-10-04 08:35:00,usuario_123,60,El cierre de Martina Ríos en el debate fue lo mejor de la noche,2,0,politica,Debate presidencial,Desempeño de los candidatos
+t00184,2026-10-04 09:50:00,usuario_081,21,"El arbitraje en el partido de Independiente fue un desastre, penal clarísimo no cobrado jaja",1,4,futbol,Fútbol,Liga local
+t00185,2026-10-04 10:14:00,usuario_013,191,La boleta única en papel es más segura que el voto electrónico 😡,0,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00186,2026-10-04 11:11:00,usuario_034,22,Las encuestadoras como Tendencias SA deberían publicar su metodología,0,0,politica,Encuestas,Críticas a encuestadoras
+t00187,2026-10-04 12:12:00,usuario_029,3303,"Hablar de fraude sin pruebas daña la democracia, Carlos Benítez debería saberlo",2,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00188,2026-10-04 12:32:00,usuario_021,257,Ningún candidato explicó en el debate cómo van a bajar el déficit jaja,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00189,2026-10-04 12:43:00,usuario_101,854,Lo único concreto del debate fue el plan fiscal de Martina Ríos #DebatePresidencial,2,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00190,2026-10-04 12:54:00,usuario_077,325,"Videos de urnas abiertas en Salta, la justicia electoral tiene que investigar el fraude",0,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00191,2026-10-04 13:43:00,usuario_140,892,"No confío en el voto electrónico, cualquier sistema se puede hackear",1,5,politica,Fraude y transparencia electoral,Voto electrónico
+t00192,2026-10-04 13:52:00,usuario_109,3640,Muestra de 500 casos y quieren predecir una elección nacional. Encuestas berretas,2,0,politica,Encuestas,Críticas a encuestadoras
+t00193,2026-10-04 14:22:00,usuario_093,52,Carlos Benítez promete inflación de un dígito en un año. Ya lo escuchamos antes,13,0,politica,Economía en campaña,Inflación
+t00194,2026-10-04 14:31:00,usuario_080,638,Salarios por el piso y los candidatos discutiendo boludeces,1,1,politica,Economía en campaña,Empleo y salarios
+t00195,2026-10-04 15:28:00,usuario_049,931,Los precios del supermercado suben todas las semanas y la campaña habla de otra cosa jaja,0,6,politica,Economía en campaña,Inflación
+t00196,2026-10-04 15:34:00,usuario_061,6547,"El desempleo en Salta es del 7%, que alguno de los candidatos lo mencione",1,1,politica,Economía en campaña,Empleo y salarios
+t00197,2026-10-04 15:59:00,usuario_003,323,"El voto electrónico en Salta funcionó sin problemas, filas cortas y rápido",2,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00198,2026-10-04 16:27:00,usuario_140,892,"El arbitraje en el partido de Racing fue un desastre, penal clarísimo no cobrado",2,0,futbol,Fútbol,Liga local
+t00199,2026-10-04 16:29:00,usuario_010,4478,Julián Paredes promete inflación de un dígito en un año. Ya lo escuchamos antes,0,9,politica,Economía en campaña,Inflación
+t00200,2026-10-04 16:40:00,usuario_084,900,Mercado de pases: Independiente busca un nueve para el próximo torneo,0,0,futbol,Fútbol,Liga local
+t00201,2026-10-04 16:45:00,usuario_126,191,"Terrible el papelón de Julián Paredes en el debate, se olvidó lo que tenía que decir",0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00202,2026-10-04 16:50:00,usuario_118,1152,"El arbitraje en el partido de Talleres fue un desastre, penal clarísimo no cobrado ...",0,2,futbol,Fútbol,Liga local
+t00203,2026-10-04 17:32:00,usuario_131,790,Encuesta: el 30% de los indecisos todavía no sabe a quién votar,0,1,politica,Encuestas,Resultados de encuestas
+t00204,2026-10-04 17:32:00,usuario_020,725,Ningún candidato explicó en el debate cómo van a bajar el déficit,1,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00205,2026-10-04 17:44:00,usuario_043,87,"No confío en el voto electrónico, cualquier sistema se puede hackear",0,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00206,2026-10-04 18:35:00,usuario_000,597,"Videos de urnas abiertas en Córdoba, la justicia electoral tiene que investigar el fraude !!",7,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00207,2026-10-04 18:37:00,usuario_054,283,Expertos en seguridad piden auditar el software del voto electrónico 👏,0,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00208,2026-10-04 20:34:00,usuario_098,1397,La propuesta de dolarización de Julián Paredes en el debate no cierra por ningún lado,19,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00209,2026-10-04 20:47:00,usuario_079,104,En el debate Julián Paredes prometió bajar impuestos pero no dijo cómo lo va a financiar 😡,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00210,2026-10-04 21:05:00,usuario_116,6,La propuesta de dolarización de Carlos Benítez en el debate no cierra por ningún lado,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00211,2026-10-04 22:04:00,usuario_132,14,La encuesta de Opina Datos en Mendoza da empate técnico entre Julián Paredes y Carlos Benítez,0,2,politica,Encuestas,Resultados de encuestas
+t00212,2026-10-04 22:09:00,usuario_017,141,"Carlos Benítez habló de reforma tributaria en el debate, habrá que ver los números",0,1,politica,Debate presidencial,Propuestas económicas en el debate
+t00213,2026-10-04 22:29:00,usuario_057,156,Opina Datos muestra a Carlos Benítez primero en Córdoba con 41% de los votos 😡,10,0,politica,Encuestas,Resultados de encuestas
+t00214,2026-10-04 23:27:00,usuario_115,976,En el debate Carlos Benítez prometió bajar impuestos pero no dijo cómo lo va a financiar 👏,8,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00215,2026-10-04 23:33:00,usuario_013,191,En el debate Martina Ríos se la pasó atacando y no propuso nada #DebatePresidencial ...,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00216,2026-10-04 23:42:00,usuario_017,141,Fiscales del Frente Renovador Federal reportan irregularidades en el conteo de votos en Santa Fe jaja,0,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00217,2026-10-05 00:33:00,usuario_084,900,"El arbitraje en el partido de Lanús fue un desastre, penal clarísimo no cobrado jaja",0,0,futbol,Fútbol,Liga local
+t00218,2026-10-05 01:02:00,usuario_090,23,Jubilados y salarios: el gran ausente en los spots de campaña jaja,1,0,politica,Economía en campaña,Empleo y salarios
+t00219,2026-10-05 02:01:00,usuario_146,13522,El cierre de Julián Paredes en el debate fue lo mejor de la noche !!,1,25,politica,Debate presidencial,Desempeño de los candidatos
+t00220,2026-10-05 02:20:00,usuario_130,270,"Si pierde Carlos Benítez van a decir que hubo fraude, ya lo están instalando",0,2,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00221,2026-10-05 02:25:00,usuario_023,14,Las encuestadoras como Opina Datos deberían publicar su metodología 😡,0,0,politica,Encuestas,Críticas a encuestadoras
+t00222,2026-10-05 02:53:00,usuario_093,52,"Las propuestas económicas del debate fueron puro humo, ningún plan serio",0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00223,2026-10-05 02:54:00,usuario_040,25,Julián Paredes promete inflación de un dígito en un año. Ya lo escuchamos antes 👏,1,2,politica,Economía en campaña,Inflación
+t00224,2026-10-05 04:12:00,usuario_147,743,"Racing no puede ganar de local hace cinco fechas, que se vaya el técnico",0,0,futbol,Fútbol,Liga local
+t00225,2026-10-05 04:21:00,usuario_075,302,Encuesta: el 30% de los indecisos todavía no sabe a quién votar,1,0,politica,Encuestas,Resultados de encuestas
+t00226,2026-10-05 04:26:00,usuario_049,931,"Las propuestas económicas del debate fueron puro humo, ningún plan serio",1,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00227,2026-10-05 05:56:00,usuario_046,2055,Las encuestadoras como Opina Datos deberían publicar su metodología,1,0,politica,Encuestas,Críticas a encuestadoras
+t00228,2026-10-05 06:06:00,usuario_120,2386,"El arbitraje en el partido de Independiente fue un desastre, penal clarísimo no cobrado ...",0,0,futbol,Fútbol,Liga local
+t00229,2026-10-05 07:19:00,usuario_044,574,"Si pierde Martina Ríos van a decir que hubo fraude, ya lo están instalando ...",0,1,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00230,2026-10-05 07:40:00,usuario_139,255,La encuesta de Consultora Federal en Buenos Aires da empate técnico entre Julián Paredes y Martina Ríos,5,0,politica,Encuestas,Resultados de encuestas
+t00231,2026-10-05 07:46:00,usuario_136,69,"Martina Ríos ganó el debate presidencial, clarísimo. Los demás no tuvieron argumentos",12,0,politica,Debate presidencial,Desempeño de los candidatos
+t00232,2026-10-05 08:08:00,usuario_082,425,"El dato de inflación sale justo antes de las elecciones, impacto directo en el voto",6,5,politica,Economía en campaña,Inflación
+t00233,2026-10-05 08:11:00,usuario_103,289,"El clásico entre Racing y Lanús fue durísimo, muchas amarillas",0,0,futbol,Fútbol,Liga local
+t00234,2026-10-05 08:26:00,usuario_002,3003,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos,0,0,politica,Economía en campaña,Empleo y salarios
+t00235,2026-10-05 08:56:00,usuario_009,2675,La inflación de 6% mensual es el tema central de la campaña de Julián Paredes 🤦,8,0,politica,Economía en campaña,Inflación
+t00236,2026-10-05 10:07:00,usuario_034,22,"Las propuestas económicas del debate fueron puro humo, ningún plan serio ...",0,1,politica,Debate presidencial,Propuestas económicas en el debate
+t00237,2026-10-05 12:01:00,usuario_095,91,Fiscales del Frente Renovador Federal reportan irregularidades en el conteo de votos en Buenos Aires,1,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00238,2026-10-05 12:22:00,usuario_068,1512,Muestra de 500 casos y quieren predecir una elección nacional. Encuestas berretas,0,7,politica,Encuestas,Críticas a encuestadoras
+t00239,2026-10-05 13:21:00,usuario_073,1271,"Qué nervioso se lo vio a Julián Paredes en el debate de anoche, no respondió nada",3,0,politica,Debate presidencial,Desempeño de los candidatos
+t00240,2026-10-05 13:39:00,usuario_140,892,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos,0,1,politica,Economía en campaña,Empleo y salarios
+t00241,2026-10-05 14:07:00,usuario_096,263,En Santa Fe hubo máquinas de voto electrónico que no arrancaban,3,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00242,2026-10-05 14:37:00,usuario_148,106,"El dato de inflación sale justo antes de las elecciones, impacto directo en el voto",2,0,politica,Economía en campaña,Inflación
+t00243,2026-10-05 14:55:00,usuario_019,88,"Carlos Benítez habló de reforma tributaria en el debate, habrá que ver los números 🤦",0,1,politica,Debate presidencial,Propuestas económicas en el debate
+t00244,2026-10-05 15:35:00,usuario_139,255,Los precios del supermercado suben todas las semanas y la campaña habla de otra cosa,0,0,politica,Economía en campaña,Inflación
+t00245,2026-10-05 15:45:00,usuario_048,44,Denuncian fraude en mesas de Buenos Aires: faltaban boletas del Partido del Progreso 👏,1,1,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00246,2026-10-05 17:13:00,usuario_053,122,Vamos Talleres!!! A seguir sumando en la tabla,0,0,futbol,Fútbol,Liga local
+t00247,2026-10-05 17:29:00,usuario_125,732,"Las encuestas otra vez le pifian, Consultora Federal trabaja para el Frente Renovador Federal",1,0,politica,Encuestas,Críticas a encuestadoras
+t00248,2026-10-05 18:01:00,usuario_148,106,Las encuestadoras como Opina Datos deberían publicar su metodología ...,0,0,politica,Encuestas,Críticas a encuestadoras
+t00249,2026-10-05 18:18:00,usuario_133,955,Fiscales del Alianza Ciudadana reportan irregularidades en el conteo de votos en Salta,15,1,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00250,2026-10-05 18:19:00,usuario_098,1397,En Mendoza hubo máquinas de voto electrónico que no arrancaban,24,4,politica,Fraude y transparencia electoral,Voto electrónico
+t00251,2026-10-05 19:09:00,usuario_122,2272,La boleta única en papel es más segura que el voto electrónico,1,1,politica,Fraude y transparencia electoral,Voto electrónico
+t00252,2026-10-05 19:32:00,usuario_039,61,Muestra de 500 casos y quieren predecir una elección nacional. Encuestas berretas jaja,2,0,politica,Encuestas,Críticas a encuestadoras
+t00253,2026-10-05 20:11:00,usuario_088,236,"Qué nervioso se lo vio a Martina Ríos en el debate de anoche, no respondió nada",113,0,politica,Debate presidencial,Desempeño de los candidatos
+t00254,2026-10-05 20:45:00,usuario_000,597,"Hablar de fraude sin pruebas daña la democracia, Carlos Benítez debería saberlo 😡",0,2,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00255,2026-10-05 21:58:00,usuario_010,4478,¿Alguien entendió qué quiso decir Carlos Benítez en el debate? Muy flojo el candidato,2,0,politica,Debate presidencial,Desempeño de los candidatos
+t00256,2026-10-05 22:46:00,usuario_144,38,"El desempleo en Buenos Aires es del 9%, que alguno de los candidatos lo mencione",0,0,politica,Economía en campaña,Empleo y salarios
+t00257,2026-10-05 22:46:00,usuario_015,4226,El Frente Renovador Federal presentó una denuncia por fraude ante la Cámara Electoral ...,1,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00258,2026-10-05 23:00:00,usuario_069,86,El cierre de Julián Paredes en el debate fue lo mejor de la noche,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00259,2026-10-05 23:30:00,usuario_042,404,En el debate Julián Paredes prometió bajar impuestos pero no dijo cómo lo va a financiar jaja,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00260,2026-10-06 00:10:00,usuario_042,404,¿Quién paga la encuesta de Opina Datos? Siempre favorece a Martina Ríos,0,0,politica,Encuestas,Críticas a encuestadoras
+t00261,2026-10-06 00:39:00,usuario_133,955,Nueva encuesta de Opina Datos: Carlos Benítez lidera con 42% de intención de voto,0,0,politica,Encuestas,Resultados de encuestas
+t00262,2026-10-06 01:04:00,usuario_055,105,"Las propuestas económicas del debate fueron puro humo, ningún plan serio 😡",0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00263,2026-10-06 01:09:00,usuario_025,662,El cierre de Carlos Benítez en el debate fue lo mejor de la noche,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00264,2026-10-06 01:10:00,usuario_023,14,"Talleres no puede ganar de local hace cinco fechas, que se vaya el técnico",0,1,futbol,Fútbol,Liga local
+t00265,2026-10-06 01:45:00,usuario_140,892,"Qué nervioso se lo vio a Julián Paredes en el debate de anoche, no respondió nada",5,1,politica,Debate presidencial,Desempeño de los candidatos
+t00266,2026-10-06 02:46:00,usuario_068,1512,La encuesta de Consultora Federal en Buenos Aires da empate técnico entre Carlos Benítez y Julián Paredes 🤦,0,0,politica,Encuestas,Resultados de encuestas
+t00267,2026-10-06 03:04:00,usuario_071,130,Los precios del supermercado suben todas las semanas y la campaña habla de otra cosa,0,0,politica,Economía en campaña,Inflación
+t00268,2026-10-06 03:25:00,usuario_096,263,"No crean en las encuestas, en 2023 erraron por diez puntos",0,1,politica,Encuestas,Críticas a encuestadoras
+t00269,2026-10-06 03:48:00,usuario_029,3303,"Si pierde Julián Paredes van a decir que hubo fraude, ya lo están instalando",1,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00270,2026-10-06 04:10:00,usuario_049,931,"Inflación, inflación, inflación. Es lo único que le importa al votante",8,0,politica,Economía en campaña,Inflación
+t00271,2026-10-06 04:20:00,usuario_028,817,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos 😡,1,0,politica,Economía en campaña,Empleo y salarios
+t00272,2026-10-06 04:20:00,usuario_087,797,"Encuestas truchas para instalar a Martina Ríos, todos lo sabemos",2,0,politica,Encuestas,Críticas a encuestadoras
+t00273,2026-10-06 04:48:00,usuario_055,105,"El voto electrónico en Salta funcionó sin problemas, filas cortas y rápido !!",3,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00274,2026-10-06 05:46:00,usuario_063,1144,Consultora Federal muestra a Martina Ríos primero en Buenos Aires con 38% de los votos,0,0,politica,Encuestas,Resultados de encuestas
+t00275,2026-10-06 05:50:00,usuario_050,346,Jubilados y salarios: el gran ausente en los spots de campaña 🤦,2,0,politica,Economía en campaña,Empleo y salarios
+t00276,2026-10-06 06:04:00,usuario_034,22,¿Alguien entendió qué quiso decir Carlos Benítez en el debate? Muy flojo el candidato !!,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00277,2026-10-06 06:26:00,usuario_100,82,Muestra de 500 casos y quieren predecir una elección nacional. Encuestas berretas,2,0,politica,Encuestas,Críticas a encuestadoras
+t00278,2026-10-06 06:38:00,usuario_073,1271,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos,1,0,politica,Economía en campaña,Empleo y salarios
+t00279,2026-10-06 06:49:00,usuario_123,60,La encuesta de Consultora Federal en Santa Fe da empate técnico entre Carlos Benítez y Julián Paredes !!,0,0,politica,Encuestas,Resultados de encuestas
+t00280,2026-10-06 06:51:00,usuario_132,14,"Carlos Benítez ganó el debate presidencial, clarísimo. Los demás no tuvieron argumentos jaja",0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00281,2026-10-06 07:13:00,usuario_138,120,"Terrible el papelón de Martina Ríos en el debate, se olvidó lo que tenía que decir",0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00282,2026-10-06 07:15:00,usuario_127,39,Las encuestadoras como Tendencias SA deberían publicar su metodología,0,13,politica,Encuestas,Críticas a encuestadoras
+t00283,2026-10-06 08:56:00,usuario_123,60,El cierre de Martina Ríos en el debate fue lo mejor de la noche,0,0,politica,Debate presidencial,Desempeño de los candidatos
+t00284,2026-10-06 09:09:00,usuario_038,67,"El dato de inflación sale justo antes de las elecciones, impacto directo en el voto jaja",2,0,politica,Economía en campaña,Inflación
+t00285,2026-10-06 09:16:00,usuario_139,255,Ningún candidato explicó en el debate cómo van a bajar el déficit,0,1,politica,Debate presidencial,Propuestas económicas en el debate
+t00286,2026-10-06 10:00:00,usuario_061,6547,En el debate Julián Paredes se la pasó atacando y no propuso nada #DebatePresidencial,1,0,politica,Debate presidencial,Desempeño de los candidatos
+t00287,2026-10-06 10:48:00,usuario_051,308,"Encuestas truchas para instalar a Julián Paredes, todos lo sabemos",0,8,politica,Encuestas,Críticas a encuestadoras
+t00288,2026-10-06 10:55:00,usuario_025,662,Denuncian fraude en mesas de Salta: faltaban boletas del Alianza Ciudadana,2,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00289,2026-10-06 11:13:00,usuario_013,191,Ningún candidato explicó en el debate cómo van a bajar el déficit,4,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00290,2026-10-06 12:01:00,usuario_137,7155,"Qué nervioso se lo vio a Julián Paredes en el debate de anoche, no respondió nada",0,2,politica,Debate presidencial,Desempeño de los candidatos
+t00291,2026-10-06 12:58:00,usuario_078,694,Martina Ríos promete inflación de un dígito en un año. Ya lo escuchamos antes,0,0,politica,Economía en campaña,Inflación
+t00292,2026-10-06 13:42:00,usuario_148,106,El cierre de Martina Ríos en el debate fue lo mejor de la noche,4,0,politica,Debate presidencial,Desempeño de los candidatos
+t00293,2026-10-06 15:15:00,usuario_144,38,"No crean en las encuestas, en 2023 erraron por diez puntos",0,0,politica,Encuestas,Críticas a encuestadoras
+t00294,2026-10-06 15:29:00,usuario_026,201,Fiscales del Frente Renovador Federal reportan irregularidades en el conteo de votos en Buenos Aires,0,1,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00295,2026-10-06 15:32:00,usuario_144,38,"El arbitraje en el partido de Talleres fue un desastre, penal clarísimo no cobrado",0,0,futbol,Fútbol,Liga local
+t00296,2026-10-06 16:11:00,usuario_119,12,La encuesta de Tendencias SA en Santa Fe da empate técnico entre Julián Paredes y Carlos Benítez,4,0,politica,Encuestas,Resultados de encuestas
+t00297,2026-10-06 16:33:00,usuario_102,665,Consultora Federal muestra a Julián Paredes primero en Santa Fe con 42% de los votos ...,0,0,politica,Encuestas,Resultados de encuestas
+t00298,2026-10-06 16:36:00,usuario_058,16,La propuesta de dolarización de Julián Paredes en el debate no cierra por ningún lado,0,1,politica,Debate presidencial,Propuestas económicas en el debate
+t00299,2026-10-06 17:05:00,usuario_030,171,Fiscales del Alianza Ciudadana reportan irregularidades en el conteo de votos en Salta,1,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00300,2026-10-06 17:49:00,usuario_147,743,"El desempleo en Mendoza es del 9%, que alguno de los candidatos lo mencione",0,0,politica,Economía en campaña,Empleo y salarios
+t00301,2026-10-06 18:20:00,usuario_101,854,"Videos de urnas abiertas en Córdoba, la justicia electoral tiene que investigar el fraude 🤦",0,1,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00302,2026-10-06 19:29:00,usuario_046,2055,Martina Ríos promete inflación de un dígito en un año. Ya lo escuchamos antes,0,1,politica,Economía en campaña,Inflación
+t00303,2026-10-06 20:51:00,usuario_130,270,"Inflación, inflación, inflación. Es lo único que le importa al votante ...",1,0,politica,Economía en campaña,Inflación
+t00304,2026-10-06 21:04:00,usuario_061,6547,Jubilados y salarios: el gran ausente en los spots de campaña jaja,2,3,politica,Economía en campaña,Empleo y salarios
+t00305,2026-10-06 21:10:00,usuario_013,191,"Qué partido jugó Lanús, golazo en el último minuto",6,0,futbol,Fútbol,Liga local
+t00306,2026-10-06 21:34:00,usuario_048,44,El cierre de Martina Ríos en el debate fue lo mejor de la noche,0,1,politica,Debate presidencial,Desempeño de los candidatos
+t00307,2026-10-06 22:09:00,usuario_026,201,Vamos Racing!!! A seguir sumando en la tabla,2,1,futbol,Fútbol,Liga local
+t00308,2026-10-06 22:23:00,usuario_011,9128,Ningún candidato explicó en el debate cómo van a bajar el déficit,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00309,2026-10-06 22:54:00,usuario_000,597,"El desempleo en Santa Fe es del 4%, que alguno de los candidatos lo mencione",3,2,politica,Economía en campaña,Empleo y salarios
+t00310,2026-10-06 22:56:00,usuario_021,257,"Martina Ríos habló de reforma tributaria en el debate, habrá que ver los números jaja",20,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00311,2026-10-06 23:29:00,usuario_020,725,"Según Consultora Federal, Julián Paredes sube 5 puntos y se acerca al balotaje",0,1,politica,Encuestas,Resultados de encuestas
+t00312,2026-10-07 00:43:00,usuario_142,191,Opina Datos muestra a Julián Paredes primero en Salta con 26% de los votos,0,0,politica,Encuestas,Resultados de encuestas
+t00313,2026-10-07 00:49:00,usuario_001,182,Expertos en seguridad piden auditar el software del voto electrónico,2,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00314,2026-10-07 01:32:00,usuario_142,191,Mercado de pases: Talleres busca un nueve para el próximo torneo,10,0,futbol,Fútbol,Liga local
+t00315,2026-10-07 02:17:00,usuario_070,299,"Encuestas truchas para instalar a Carlos Benítez, todos lo sabemos",22,0,politica,Encuestas,Críticas a encuestadoras
+t00316,2026-10-07 03:36:00,usuario_099,36,¿Quién paga la encuesta de Opina Datos? Siempre favorece a Martina Ríos,0,1,politica,Encuestas,Críticas a encuestadoras
+t00317,2026-10-07 04:17:00,usuario_071,130,"Las encuestas otra vez le pifian, Tendencias SA trabaja para el Frente Renovador Federal 🤦",0,0,politica,Encuestas,Críticas a encuestadoras
+t00318,2026-10-07 04:24:00,usuario_127,39,Vamos Racing!!! A seguir sumando en la tabla,2,0,futbol,Fútbol,Liga local
+t00319,2026-10-07 05:33:00,usuario_074,383,Primera vez con voto electrónico en Mendoza y la verdad fue muy fácil votar,0,1,politica,Fraude y transparencia electoral,Voto electrónico
+t00320,2026-10-07 05:41:00,usuario_001,182,"El desempleo en Santa Fe es del 6%, que alguno de los candidatos lo mencione",0,0,politica,Economía en campaña,Empleo y salarios
+t00321,2026-10-07 06:33:00,usuario_029,3303,"Carlos Benítez habló de reforma tributaria en el debate, habrá que ver los números jaja",1,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00322,2026-10-07 06:44:00,usuario_108,4628,Vamos Independiente!!! A seguir sumando en la tabla,3,0,futbol,Fútbol,Liga local
+t00323,2026-10-07 08:08:00,usuario_009,2675,En Córdoba hubo máquinas de voto electrónico que no arrancaban !!,0,2,politica,Fraude y transparencia electoral,Voto electrónico
+t00324,2026-10-07 08:14:00,usuario_071,130,Vamos Lanús!!! A seguir sumando en la tabla ...,3,0,futbol,Fútbol,Liga local
+t00325,2026-10-07 08:17:00,usuario_010,4478,"El arbitraje en el partido de Racing fue un desastre, penal clarísimo no cobrado",0,1,futbol,Fútbol,Liga local
+t00326,2026-10-07 08:23:00,usuario_030,171,"Qué nervioso se lo vio a Julián Paredes en el debate de anoche, no respondió nada 👏",2,0,politica,Debate presidencial,Desempeño de los candidatos
+t00327,2026-10-07 08:57:00,usuario_084,900,La boleta única en papel es más segura que el voto electrónico,2,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00328,2026-10-07 09:18:00,usuario_095,91,Expertos en seguridad piden auditar el software del voto electrónico jaja,1,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00329,2026-10-07 09:22:00,usuario_143,1073,En el debate Martina Ríos prometió bajar impuestos pero no dijo cómo lo va a financiar,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00330,2026-10-07 09:25:00,usuario_026,201,Expertos en seguridad piden auditar el software del voto electrónico,4,1,politica,Fraude y transparencia electoral,Voto electrónico
+t00331,2026-10-07 09:57:00,usuario_074,383,Fiscales del Alianza Ciudadana reportan irregularidades en el conteo de votos en Santa Fe 👏,2,1,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00332,2026-10-07 11:39:00,usuario_063,1144,"El desempleo en Buenos Aires es del 5%, que alguno de los candidatos lo mencione",1,0,politica,Economía en campaña,Empleo y salarios
+t00333,2026-10-07 13:17:00,usuario_082,425,Salarios por el piso y los candidatos discutiendo boludeces !!,0,1,politica,Economía en campaña,Empleo y salarios
+t00334,2026-10-07 13:27:00,usuario_134,166,Primera vez con voto electrónico en Córdoba y la verdad fue muy fácil votar jaja,1,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00335,2026-10-07 13:39:00,usuario_016,726,"Las encuestas otra vez le pifian, Consultora Federal trabaja para el Alianza Ciudadana",0,2,politica,Encuestas,Críticas a encuestadoras
+t00336,2026-10-07 15:03:00,usuario_077,325,"Según Consultora Federal, Martina Ríos sube 6 puntos y se acerca al balotaje",1,0,politica,Encuestas,Resultados de encuestas
+t00337,2026-10-07 15:12:00,usuario_009,2675,La boleta única en papel es más segura que el voto electrónico,1,0,politica,Fraude y transparencia electoral,Voto electrónico
+t00338,2026-10-07 15:39:00,usuario_034,22,"Si pierde Julián Paredes van a decir que hubo fraude, ya lo están instalando 👏",0,0,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00339,2026-10-07 15:50:00,usuario_046,2055,"Qué nervioso se lo vio a Martina Ríos en el debate de anoche, no respondió nada",0,2,politica,Debate presidencial,Desempeño de los candidatos
+t00340,2026-10-07 16:02:00,usuario_103,289,"Inflación, inflación, inflación. Es lo único que le importa al votante",0,0,politica,Economía en campaña,Inflación
+t00341,2026-10-07 16:17:00,usuario_100,82,"No crean en las encuestas, en 2023 erraron por diez puntos",0,0,politica,Encuestas,Críticas a encuestadoras
+t00342,2026-10-07 17:29:00,usuario_070,299,Ningún candidato explicó en el debate cómo van a bajar el déficit,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00343,2026-10-07 17:36:00,usuario_043,87,La encuesta de Consultora Federal en Mendoza da empate técnico entre Martina Ríos y Julián Paredes,9,0,politica,Encuestas,Resultados de encuestas
+t00344,2026-10-07 18:07:00,usuario_076,20,Encuesta: el 35% de los indecisos todavía no sabe a quién votar ...,0,2,politica,Encuestas,Resultados de encuestas
+t00345,2026-10-07 18:10:00,usuario_012,16298,"No confío en el voto electrónico, cualquier sistema se puede hackear",77,1,politica,Fraude y transparencia electoral,Voto electrónico
+t00346,2026-10-07 18:46:00,usuario_045,1928,"El arbitraje en el partido de Independiente fue un desastre, penal clarísimo no cobrado !!",5,0,futbol,Fútbol,Liga local
+t00347,2026-10-07 18:55:00,usuario_146,13522,"El dato de inflación sale justo antes de las elecciones, impacto directo en el voto 🤦",0,0,politica,Economía en campaña,Inflación
+t00348,2026-10-07 18:56:00,usuario_127,39,Lo único concreto del debate fue el plan fiscal de Martina Ríos #DebatePresidencial,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00349,2026-10-07 18:59:00,usuario_006,62,Consultora Federal muestra a Julián Paredes primero en Córdoba con 38% de los votos,0,8,politica,Encuestas,Resultados de encuestas
+t00350,2026-10-07 19:02:00,usuario_124,1006,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos,0,0,politica,Economía en campaña,Empleo y salarios
+t00351,2026-10-07 19:03:00,usuario_081,21,Denuncian fraude en mesas de Buenos Aires: faltaban boletas del Alianza Ciudadana 🤦,0,3,politica,Fraude y transparencia electoral,Denuncias de fraude
+t00352,2026-10-07 21:21:00,usuario_089,1051,Los trabajadores informales no aparecen en ninguna propuesta de los candidatos 🤦,0,0,politica,Economía en campaña,Empleo y salarios
+t00353,2026-10-07 21:46:00,usuario_124,1006,Lo único concreto del debate fue el plan fiscal de Carlos Benítez #DebatePresidencial,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00354,2026-10-07 21:46:00,usuario_058,16,En el debate Martina Ríos se la pasó atacando y no propuso nada #DebatePresidencial,2,0,politica,Debate presidencial,Desempeño de los candidatos
+t00355,2026-10-07 22:08:00,usuario_082,425,Jubilados y salarios: el gran ausente en los spots de campaña,0,0,politica,Economía en campaña,Empleo y salarios
+t00356,2026-10-07 22:15:00,usuario_140,892,Ningún candidato explicó en el debate cómo van a bajar el déficit,0,0,politica,Debate presidencial,Propuestas económicas en el debate
+t00357,2026-10-07 22:56:00,usuario_091,123,"El voto electrónico en Salta funcionó sin problemas, filas cortas y rápido",0,1,politica,Fraude y transparencia electoral,Voto electrónico
+t00358,2026-10-07 22:58:00,usuario_100,82,Vamos Talleres!!! A seguir sumando en la tabla,9,0,futbol,Fútbol,Liga local
+t00359,2026-10-07 23:40:00,usuario_140,892,"Inflación, inflación, inflación. Es lo único que le importa al votante",1,1,politica,Economía en campaña,Inflación
