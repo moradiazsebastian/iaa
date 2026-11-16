@@ -1,7 +1,7 @@
 THEME ?= elecciones presidenciales
 ARGS ?=
 
-.PHONY: setup run run-offline eval repro test lint sample
+.PHONY: setup run run-offline eval repro api test lint sample
 
 setup:            ## Crea .venv e instala el proyecto
 	python -m venv .venv
@@ -20,12 +20,15 @@ eval:             ## Compara contra las etiquetas manuales del dataset
 repro:            ## Corre dos veces sin caché y mide cuánto difieren
 	foco repro --theme "$(THEME)" $(ARGS)
 
+api:              ## API para la app web en http://localhost:8000 (docs en /docs)
+	uvicorn foco_social.api:app --reload --port 8000
+
 test:
 	pytest -q
 
 lint:
-	ruff check src tests
-	ruff format --check src tests
+	ruff check src tests api
+	ruff format --check src tests api
 
 sample:           ## Regenera data/sample/tweets.csv
 	foco make-sample

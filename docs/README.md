@@ -25,6 +25,7 @@ foco eval / repro / compare → métricas         evaluation/metrics.py
 |---|---|---|
 | `cli.py` | Comandos `foco run`, `eval`, `repro`, `compare` y `make-sample` | [cli.md](cli.md) |
 | `runner.py` | Ejecuta el grafo de punta a punta y guarda los resultados | [runner.md](runner.md) |
+| `api.py`, `api/index.py`, `vercel.json` | API HTTP para la app web y su despliegue en Vercel | [web.md](web.md) |
 | `config.py` | Configuración leída de `.env` | [config.md](config.md) |
 | `llm.py` | Acceso al LLM con salida estructurada y caché en disco | [llm.md](llm.md) |
 | `prompts.py` | Textos de los prompts | [prompts.md](prompts.md) |

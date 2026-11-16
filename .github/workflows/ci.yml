@@ -3,7 +3,9 @@ name: CI
 on:
   push:
     branches: [main]
+    paths-ignore: ["web/**"]  # los cambios solo de la app web no corren la CI de Python
   pull_request:
+    paths-ignore: ["web/**"]
 
 jobs:
   test:
@@ -18,8 +20,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: pip
       - run: pip install -e ".[dev]"
-      - run: ruff check src tests
-      - run: ruff format --check src tests
+      - run: ruff check src tests api
+      - run: ruff format --check src tests api
       - run: pytest -q
       # Corrida completa sin LLM sobre el dataset de ejemplo (no usa API keys)
       - run: foco eval --theme elecciones --keywords debate,encuesta,fraude,voto,inflacion,candidato --provider none

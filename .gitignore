@@ -3,6 +3,9 @@
 /*
 
 !/.github/
+!/api/
+!/web/
+!/vercel.json
 !/src/
 !/tests/
 !/docs/
@@ -23,3 +26,10 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 .env
+.env*.local
+
+# App web (Next.js) y Vercel
+node_modules/
+/web/.next/
+/web/out/
+.vercel/

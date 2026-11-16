@@ -12,6 +12,7 @@ ejecuta en cada push y pull request.
 | `test_metrics.py` | Particiones iguales con nombres distintos dan puntaje perfecto; `level()` recorta paths |
 | `test_topic_models.py` | KMeans y LDA devuelven un tópico y una confianza por mensaje y son determinísticos; los outliers van al tópico más cercano con confianza 0; BERTopic arma una jerarquía en la que cada subtópico pertenece a un solo tópico. Este último se saltea si BERTopic no está instalado, como en la CI |
 | `test_cli.py` | `foco compare` sin LLM escribe una fila por método y un `eval.json` por celda |
+| `test_api.py` | Endpoints de la API: salud, opciones, una corrida sin LLM con métricas, y los errores 503 (sin LLM), 404 (sin mensajes) y 422 (pedido inválido); además, que `api/index.py` exponga la misma app |
 
 ## `StubLLM`
 
