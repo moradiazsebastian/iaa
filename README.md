@@ -1,4 +1,4 @@
-﻿# Foco Social
+# Foco Social
 
 Agente para **detección de tópicos en redes sociales** (X/Twitter). Dada una temática y una
 granularidad, busca mensajes relevantes, los agrupa en tópicos y subtópicos, los nombra y
@@ -12,7 +12,9 @@ Construido con **LangGraph / LangChain**. El proveedor de LLM es configurable.
 Requiere Python 3.10+.
 
 ```bash
-git clone <url-del-repo> && cd foco-social
+git clone --recursive <url-del-repo> && cd foco-social
+# Si ya clonaste sin --recursive:
+# git submodule update --init --recursive
 python -m venv .venv
 # Windows:      .venv\Scripts\activate
 # macOS/Linux:  source .venv/bin/activate
