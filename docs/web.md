@@ -6,23 +6,40 @@ una interfaz en Next.js. La CLI sigue funcionando igual: nada de lo de abajo la 
 ```
 iaa/
 ├── src/foco_social/api.py   API (FastAPI): la usa la web, la CLI no
-├── api/index.py             entrypoint que busca Vercel; solo importa la API
-├── vercel.json              configuración de Vercel (duración, archivos excluidos)
-└── web/                     interfaz en Next.js (generada con v0)
+├── api/index.py             entrypoint de la API en Vercel; solo importa la API
+├── web/                     interfaz en Next.js 16 (pnpm)
+│   ├── src/app/             layout, página y estilos
+│   ├── src/components/      formulario, resultados, árbol de temas, tabla, métricas
+│   └── src/lib/             cliente de la API (api.ts), tipos y formatos
+└── vercel.json              dos servicios: "web" (web/) y "api" (Python); /api/* va a la API
 ```
 
-## Correr la API en local
+## Correr la app completa en local
+
+Hacen falta dos terminales: la API en el puerto 8000 y la web en el 3000.
 
 ```bash
-pip install -e ".[dev]"          # instala fastapi y uvicorn
+# Terminal 1: API (desde la raíz del repo)
+pip install -e ".[dev]"
 uvicorn foco_social.api:app --reload --port 8000
+
+# Terminal 2: web
+cd web
+corepack enable            # una vez; o usar "npx pnpm@10.34.3" en lugar de "pnpm"
+pnpm install
+pnpm dev
 ```
 
-Documentación interactiva en http://localhost:8000/docs. Usa la misma configuración que la
-CLI (`.env`): proveedor de LLM, dataset, método por defecto.
+Abrir http://localhost:3000. En desarrollo, Next.js reenvía `/api/*` a
+`http://127.0.0.1:8000` (`web/next.config.ts`), así que no hace falta configurar CORS.
+La documentación interactiva de la API está en http://localhost:8000/docs.
 
-Para la interfaz en local, Next.js corre en el puerto 3000. La API acepta pedidos de
-`http://localhost:3000` (variable `CORS_ORIGINS`, separada por comas).
+La API usa la misma configuración que la CLI (`.env`): proveedor de LLM, dataset y método por
+defecto. Para apuntar la web a una API en otro dominio, definir `NEXT_PUBLIC_API_BASE_URL` y
+agregar ese origen a `CORS_ORIGINS` en la API.
+
+Antes de abrir un pull request que toque `web/`: `pnpm lint && pnpm build`. La CI lo corre
+(`.github/workflows/web.yml`) solo cuando cambia algo en `web/`.
 
 ## Endpoints
 
@@ -134,9 +151,9 @@ un estado de carga.
 5. **Datos reales**: no se suben al repo. Para usarlos en la app hay que guardarlos en un
    almacenamiento privado (p. ej. Vercel Blob) y apuntar `DATA_PATH` a ellos.
 
-### Cuando exista `web/`
+### Cómo se sirven la web y la API
 
-Vercel tiene que construir la interfaz y la API en el mismo proyecto. La opción
-recomendada es Vercel Services (beta), configurado en `vercel.json`: un servicio para `web/`
-y otro para la API, con `/api/*` dirigido a la API. Esa configuración se agrega junto con el
-código de `web/`.
+`vercel.json` usa Vercel Services (beta): el servicio `web` construye `web/` con Next.js y
+el servicio `api` sirve la app de FastAPI. Las reglas de `rewrites` mandan `/api/*` a la API
+(que recibe la ruta completa, p. ej. `/api/health`) y todo lo demás a la web. Las dos quedan
+en el mismo dominio, así que comparten la protección de Vercel y no hace falta CORS.

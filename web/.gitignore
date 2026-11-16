@@ -1,0 +1,22 @@
+# Dependencias
+/node_modules
+/.pnp
+.pnp.*
+
+# Build de Next.js
+/.next/
+/out/
+/build
+
+# Archivos generados por el build de TypeScript / Next.js
+*.tsbuildinfo
+next-env.d.ts
+
+# Variables de entorno locales y Vercel
+.env*.local
+.vercel
+
+# Logs y otros
+npm-debug.log*
+pnpm-debug.log*
+.DS_Store

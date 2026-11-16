@@ -1,9 +1,23 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/index.py": {
-      "maxDuration": 300,
-      "excludeFiles": "{tests/**,docs/**,web/**,runs/**,.cache/**,.venv/**,.github/**,**/__pycache__/**}"
+  "services": {
+    "web": {
+      "root": "web/",
+      "framework": "nextjs"
+    },
+    "api": {
+      "root": "./",
+      "entrypoint": "api.index:app",
+      "functions": {
+        "api/index.py": {
+          "maxDuration": 300,
+          "excludeFiles": "{web/**,tests/**,docs/**,runs/**,.cache/**,.venv/**,.github/**,**/__pycache__/**}"
+        }
+      }
     }
-  }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": { "service": "api" } },
+    { "source": "/(.*)", "destination": { "service": "web" } }
+  ]
 }
