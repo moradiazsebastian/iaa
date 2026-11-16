@@ -1,0 +1,3 @@
+[submodule ".agents/skills/bertopic-explorer"]
+	path = .agents/skills/bertopic-explorer
+	url = https://github.com/fcalabrow/skill-bertopic
