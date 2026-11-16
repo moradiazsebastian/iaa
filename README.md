@@ -208,6 +208,8 @@ vercel.json         configuración de Vercel
 
 ## Desarrollo
 
+Flujo de ramas y pull requests: [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ```bash
 pytest -q
 ruff check src tests && ruff format src tests

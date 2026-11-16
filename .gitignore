@@ -15,6 +15,7 @@
 !/Makefile
 !/pyproject.toml
 !/README.md
+!/CONTRIBUTING.md
 
 # data/: solo el dataset sintético y su README. Los datos reales quedan locales.
 /data/*
