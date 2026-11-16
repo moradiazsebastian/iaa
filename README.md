@@ -171,13 +171,25 @@ puede fijar en 0. Las corridas se hacen repetibles con semillas fijas en el clus
 muestreo, y con la caché del LLM: la misma consulta devuelve la misma respuesta guardada.
 Si se cambia un prompt o el modelo, la clave de la caché cambia y se vuelve a llamar a la API.
 
+## App web
+
+Además de la CLI, el agente se expone como API HTTP (`src/foco_social/api.py`, FastAPI) para
+una interfaz web desplegada en Vercel. La CLI no depende de ella. Para correrla en local:
+
+```bash
+uvicorn foco_social.api:app --reload --port 8000   # documentación en /docs
+```
+
+Endpoints, despliegue y límites en [docs/web.md](docs/web.md).
+
 ## Estructura
 
 Ver [docs/](docs/README.md) para una explicación de cada archivo.
 
 ```
 src/foco_social/
-  cli.py            comandos foco run | eval | repro | make-sample
+  cli.py            comandos foco run | eval | repro | compare | make-sample
+  api.py            API HTTP (FastAPI) para la app web
   runner.py         ejecuta el grafo y guarda resultados
   config.py         configuración (.env)
   llm.py            LLM vía LangChain + salida estructurada + caché
@@ -190,9 +202,13 @@ src/foco_social/
   evaluation/       métricas y generador de datos sintéticos
 tests/              tests sin red (el LLM se simula)
 data/sample/        dataset sintético de ejemplo
+api/index.py        entrypoint de Vercel (solo importa la API)
+vercel.json         configuración de Vercel
 ```
 
 ## Desarrollo
+
+Flujo de ramas y pull requests: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ```bash
 pytest -q

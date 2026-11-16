@@ -16,6 +16,7 @@ dependencies = [
     "pandas>=2.1",
     "scikit-learn>=1.4",
     "scipy>=1.11",
+    "fastapi>=0.115",  # API de la app web (src/foco_social/api.py); la CLI no la usa
 ]
 
 [project.optional-dependencies]
@@ -26,7 +27,7 @@ ollama = ["langchain-ollama>=1.0"]
 embeddings = ["sentence-transformers>=3.0"]
 # TOPIC_MODEL=bertopic (incluye los embeddings)
 bertopic = ["bertopic>=0.16", "sentence-transformers>=3.0", "umap-learn>=0.5"]
-dev = ["pytest>=8.0", "ruff>=0.6"]
+dev = ["pytest>=8.0", "ruff>=0.6", "httpx>=0.27", "uvicorn>=0.30"]
 
 [project.scripts]
 foco = "foco_social.cli:main"

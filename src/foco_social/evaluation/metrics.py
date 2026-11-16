@@ -31,6 +31,24 @@ def compare(pred: pd.Series, gold: pd.Series) -> dict:
     }
 
 
+def evaluate(
+    pred: pd.Series, gold: pd.DataFrame, depth: int, names: dict[str, str] | None = None
+) -> dict:
+    """Métricas de tópicos (y subtópicos si corresponde) contra las etiquetas manuales.
+
+    `pred`: path del tópico de cada mensaje (índice = id). `gold`: columnas topic / subtopic.
+    `names`: {path: nombre}, para que el emparejamiento se lea con nombres.
+    """
+    metrics = {"topics": compare(level(pred, 1), gold["topic"])}
+    if gold["subtopic"].notna().any() and depth >= 2:
+        gold_sub = gold["topic"] + " / " + gold["subtopic"].fillna("")
+        metrics["subtopics"] = compare(level(pred, 2), gold_sub)
+    names = names or {}
+    for m in metrics.values():
+        m["matching"] = {f"{k} {names.get(k, '')}".strip(): v for k, v in m["matching"].items()}
+    return metrics
+
+
 def level(paths: pd.Series, depth: int) -> pd.Series:
     """Recorta paths jerárquicos ('2.1.3') a una profundidad dada ('2.1')."""
     return paths.map(lambda p: ".".join(p.split(".")[:depth]) if p else "(sin tópico)")

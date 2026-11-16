@@ -12,7 +12,7 @@ import pandas as pd
 from dotenv import load_dotenv
 
 from foco_social.config import Settings, get_settings
-from foco_social.evaluation.metrics import compare, level
+from foco_social.evaluation.metrics import compare, evaluate, level
 from foco_social.graph.nodes import plan_keywords
 from foco_social.llm import LLM
 from foco_social.runner import AnalysisResult, run_analysis, save_run
@@ -253,14 +253,7 @@ def _analyze(args, settings: Settings, keywords: list[str] | None = None) -> Ana
 def _evaluate(result: AnalysisResult, gold: pd.DataFrame, depth: int) -> dict:
     """Métricas de tópicos (y subtópicos si corresponde) contra las etiquetas manuales."""
     pred = result.assignments_frame().set_index("id")["topic_path"]
-    metrics = {"topics": compare(level(pred, 1), gold["topic"])}
-    if gold["subtopic"].notna().any() and depth >= 2:
-        gold_sub = gold["topic"] + " / " + gold["subtopic"].fillna("")
-        metrics["subtopics"] = compare(level(pred, 2), gold_sub)
-    names = result.topic_names()
-    for m in metrics.values():
-        m["matching"] = {f"{k} {names.get(k, '')}".strip(): v for k, v in m["matching"].items()}
-    return metrics
+    return evaluate(pred, gold, depth, result.topic_names())
 
 
 def _markdown_table(df: pd.DataFrame) -> str:
