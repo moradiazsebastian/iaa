@@ -1,4 +1,4 @@
-"""Línea de comandos: foco run | eval | repro | compare | make-sample."""
+"""Línea de comandos: foco run | eval | repro | compare | benchmark | prepare-boca | make-sample."""
 
 import argparse
 import json
@@ -51,6 +51,7 @@ def _build_parser() -> argparse.ArgumentParser:
     analysis.add_argument("--data", type=Path, help="Dataset (pisa DATA_PATH)")
     analysis.add_argument("--provider", help="Proveedor de LLM (pisa LLM_PROVIDER)")
     analysis.add_argument("--model", help="Modelo (pisa LLM_MODEL)")
+    analysis.add_argument("--embedding-model", help="Modelo de embeddings (pisa EMBEDDING_MODEL)")
 
     single = argparse.ArgumentParser(add_help=False)
     single.add_argument("--method", choices=METHODS, help="Método de tópicos (pisa TOPIC_MODEL)")
@@ -80,6 +81,36 @@ def _build_parser() -> argparse.ArgumentParser:
         "--llm", choices=["both", "on", "off"], default="both", help="Con LLM, sin LLM o ambos"
     )
     p.set_defaults(func=cmd_compare)
+
+    p = sub.add_parser(
+        "benchmark",
+        parents=[analysis, single],
+        help="Ejecuta las suites de benchmark (relevancia y modelos de embeddings en BERTopic)",
+    )
+    p.add_argument(
+        "--embedding-models",
+        default="tfidf,paraphrase-multilingual-MiniLM-L12-v2",
+        help="Modelos de embeddings separados por coma (usar 'tfidf' como baseline léxico)",
+    )
+    p.set_defaults(func=cmd_benchmark)
+
+    p = sub.add_parser(
+        "prepare-boca",
+        help="Normaliza y genera el dataset etiquetado (Ground Truth) de partidos de Boca",
+    )
+    p.add_argument(
+        "--boca-root",
+        type=Path,
+        default=Path("../tp/Datasets/Boca"),
+        help="Carpeta raíz con los partidos crudos de Boca",
+    )
+    p.add_argument(
+        "--out-dir",
+        type=Path,
+        default=Path("data/benchmark"),
+        help="Carpeta destino para los CSVs etiquetados",
+    )
+    p.set_defaults(func=cmd_prepare_boca)
 
     p = sub.add_parser("make-sample", help="Genera el dataset sintético de ejemplo")
     p.add_argument("--out", type=Path, default=Path("data/sample/tweets.csv"))
@@ -212,6 +243,59 @@ def cmd_compare(args) -> None:
     print(f"Resultados en {run_dir}")
 
 
+def cmd_benchmark(args) -> None:
+    """Ejecuta las suites del Benchmark (Suite A: Relevancia, Suite B: Modelos de Embeddings)."""
+    from foco_social.evaluation.benchmark import (
+        benchmark_embeddings,
+        benchmark_relevance_filters,
+    )
+
+    settings = _settings(args)
+    run_dir = _start_run(settings, args.theme, "benchmark")
+    df = pd.read_csv(settings.data_path)
+    keywords = (
+        [k.strip() for k in args.keywords.split(",")]
+        if args.keywords
+        else [k.strip() for k in args.theme.split(",") if k.strip()]
+    )
+
+    sections = [f"# Benchmark: {args.theme}", f"- Dataset: `{settings.data_path}`", ""]
+
+    if "is_relevant" in df.columns:
+        rel_table = benchmark_relevance_filters(df, args.theme, keywords)
+        rel_table.to_csv(run_dir / "relevance_results.csv", index=False, encoding="utf-8")
+        rel_md = _markdown_table(rel_table)
+        sections += ["## Suite A: Clasificación de Relevancia y Filtrado de Ruido", "", rel_md, ""]
+
+    emb_models = [m.strip() for m in args.embedding_models.split(",") if m.strip()]
+    emb_table = benchmark_embeddings(
+        df,
+        models=emb_models,
+        n_topics=args.topics,
+        n_subtopics=args.subtopics,
+        depth=args.depth,
+        topic_model=settings.topic_model,
+        settings=settings,
+    )
+    emb_table.to_csv(run_dir / "embedding_results.csv", index=False, encoding="utf-8")
+    emb_md = _markdown_table(emb_table)
+    sections += ["## Suite B: Modelos de Embeddings y Calidad de Partición", "", emb_md, ""]
+
+    report_text = "\n".join(sections)
+    (run_dir / "benchmark_report.md").write_text(report_text, encoding="utf-8")
+    print(report_text)
+    print(f"Resultados en {run_dir}")
+
+
+def cmd_prepare_boca(args) -> None:
+    from foco_social.evaluation.boca import build_boca_benchmark
+
+    paths = build_boca_benchmark(args.boca_root, args.out_dir)
+    summary = json.loads(paths["summary"].read_text(encoding="utf-8"))
+    print(json.dumps(summary, indent=2, ensure_ascii=False))
+    print(f"Datasets de benchmark generados en {args.out_dir}")
+
+
 def cmd_make_sample(args) -> None:
     from foco_social.evaluation.synthetic import generate
 
@@ -230,6 +314,7 @@ def _settings(args, **overrides) -> Settings:
         llm_provider=args.provider,
         llm_model=args.model,
         topic_model=getattr(args, "method", None),
+        embedding_model=getattr(args, "embedding_model", None),
         **overrides,
     )
 

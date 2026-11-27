@@ -8,6 +8,7 @@ Todos devuelven un `TopicFit` con la misma forma, así el grafo no depende del m
   tópico). Los outliers tienen 0, así que son los primeros que revisa el LLM.
 - `sublabels`: subtópicos ya calculados para cada mensaje (solo BERTopic, que arma la
   jerarquía en un único ajuste). En el nivel siguiente se usan con `fit_presplit`.
+- `outlier_rate`: proporción de mensajes que HDBSCAN marcó como `-1` antes de reasignarlos.
 """
 
 import logging
@@ -33,6 +34,7 @@ class TopicFit:
     labels: np.ndarray
     confidence: np.ndarray
     sublabels: np.ndarray | None = None
+    outlier_rate: float = 0.0
 
 
 def fit_topics(texts: list[str], n_topics: int | None, settings: Settings) -> TopicFit:
@@ -41,7 +43,7 @@ def fit_topics(texts: list[str], n_topics: int | None, settings: Settings) -> To
     if method == "lda":
         return _fit_lda(texts, n_topics, settings.seed)
     if method == "bertopic":
-        return _fit_bertopic(texts, n_topics, settings.seed)
+        return _fit_bertopic(texts, n_topics, settings.seed, settings.embedding_model)
     return _fit_kmeans(texts, n_topics, settings)
 
 
@@ -60,7 +62,7 @@ def fit_presplit(
     small = np.isin(labels, ids[counts < 3])
     if len(ids[counts >= 3]) < 2:
         return None
-    X = embed(texts, "sentence-transformers")
+    X = embed(texts, "sentence-transformers", settings.seed, settings.embedding_model)
     labels, _ = _assign_outliers(X, np.where(small, -1, labels))
 
     n_fine = labels.max() + 1
@@ -69,16 +71,20 @@ def fit_presplit(
         centroids = _centroids(X, labels)
         k = target or _best_merge(centroids)
         labels = _merge(centroids, k)[labels]
-    return TopicFit(labels=labels, confidence=_confidence(X, labels, small))
+    return TopicFit(
+        labels=labels,
+        confidence=_confidence(X, labels, small),
+        outlier_rate=float(small.mean()),
+    )
 
 
 # --- KMeans ---------------------------------------------------------------------
 
 
 def _fit_kmeans(texts: list[str], n_topics: int | None, settings: Settings) -> TopicFit:
-    X = embed(texts, settings.embeddings, settings.seed)
+    X = embed(texts, settings.embeddings, settings.seed, settings.embedding_model)
     labels, centroids = cluster(X, n_topics, settings.seed, max_k=MAX_AUTO_TOPICS)
-    return TopicFit(labels=labels, confidence=assignment_margin(X, centroids))
+    return TopicFit(labels=labels, confidence=assignment_margin(X, centroids), outlier_rate=0.0)
 
 
 # --- LDA ------------------------------------------------------------------------
@@ -114,13 +120,18 @@ def _fit_lda(texts: list[str], n_topics: int | None, seed: int) -> TopicFit:
 
     labels = _contiguous(theta.argmax(axis=1))  # algún tópico puede no ser dominante en nadie
     ordered = np.sort(theta, axis=1)
-    return TopicFit(labels=labels, confidence=ordered[:, -1] - ordered[:, -2])
+    return TopicFit(labels=labels, confidence=ordered[:, -1] - ordered[:, -2], outlier_rate=0.0)
 
 
 # --- BERTopic -------------------------------------------------------------------
 
 
-def _fit_bertopic(texts: list[str], n_topics: int | None, seed: int) -> TopicFit:
+def _fit_bertopic(
+    texts: list[str],
+    n_topics: int | None,
+    seed: int,
+    embedding_model: str = "paraphrase-multilingual-MiniLM-L12-v2",
+) -> TopicFit:
     """BERTopic encuentra tópicos finos; se agrupan jerárquicamente en tópicos de nivel 1.
 
     Los tópicos finos quedan como subtópicos (`sublabels`). Es la misma idea que
@@ -133,7 +144,7 @@ def _fit_bertopic(texts: list[str], n_topics: int | None, seed: int) -> TopicFit
         raise ImportError('TOPIC_MODEL=bertopic requiere: pip install -e ".[bertopic]"') from e
     from sklearn.cluster import HDBSCAN
 
-    X = embed(texts, "sentence-transformers")
+    X = embed(texts, "sentence-transformers", seed, embedding_model)
     n = len(texts)
     model = BERTopic(
         umap_model=UMAP(
@@ -149,16 +160,22 @@ def _fit_bertopic(texts: list[str], n_topics: int | None, seed: int) -> TopicFit
     )
     raw, _ = model.fit_transform(texts, embeddings=X)
     raw = np.asarray(raw)
+    outlier_rate = float((raw == -1).mean()) if len(raw) else 0.0
     log.info(
-        "BERTopic: %d tópicos finos, %d outliers (%.0f%%)",
+        "BERTopic (%s): %d tópicos finos, %d outliers (%.0f%%)",
+        embedding_model,
         len(set(raw.tolist()) - {-1}),
         int((raw == -1).sum()),
-        100 * (raw == -1).mean(),
+        100 * outlier_rate,
     )
     if len(set(raw.tolist()) - {-1}) < 2:
         # Sin estructura suficiente: se recurre a KMeans sobre los mismos embeddings
         labels, centroids = cluster(X, n_topics, seed, max_k=MAX_AUTO_TOPICS)
-        return TopicFit(labels=labels, confidence=assignment_margin(X, centroids))
+        return TopicFit(
+            labels=labels,
+            confidence=assignment_margin(X, centroids),
+            outlier_rate=outlier_rate,
+        )
 
     fine, _ = _assign_outliers(X, _contiguous(raw))
 
@@ -166,9 +183,18 @@ def _fit_bertopic(texts: list[str], n_topics: int | None, seed: int) -> TopicFit
     centroids = _centroids(X, fine)
     n_fine = centroids.shape[0]
     if n_topics is not None and n_topics >= n_fine:
-        return TopicFit(labels=fine, confidence=_confidence(X, fine, raw == -1))
+        return TopicFit(
+            labels=fine,
+            confidence=_confidence(X, fine, raw == -1),
+            outlier_rate=outlier_rate,
+        )
     coarse = _merge(centroids, n_topics or _best_merge(centroids))[fine]
-    return TopicFit(labels=coarse, confidence=_confidence(X, coarse, raw == -1), sublabels=fine)
+    return TopicFit(
+        labels=coarse,
+        confidence=_confidence(X, coarse, raw == -1),
+        sublabels=fine,
+        outlier_rate=outlier_rate,
+    )
 
 
 def _merge(centroids: np.ndarray, k: int) -> np.ndarray:
