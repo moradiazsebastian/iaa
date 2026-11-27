@@ -22,18 +22,28 @@ para pero poco por porque que quien se sea ser si sin sobre solo son su sus tamb
 te tiene tienen todo todos tu un una uno unos usted va vamos y ya yo rt via https http co amp
 """.split()
 
+DEFAULT_SENTENCE_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
 
-def embed(texts: list[str], method: str = "tfidf", seed: int = 42) -> np.ndarray:
+
+def embed(
+    texts: list[str],
+    method: str = "tfidf",
+    seed: int = 42,
+    model_name: str = DEFAULT_SENTENCE_MODEL,
+) -> np.ndarray:
     """Devuelve una matriz (n_textos, dim) con filas de norma 1."""
     if method == "sentence-transformers":
-        # Caché por texto: los subtópicos reutilizan los embeddings del nivel anterior
-        missing = [t for t in dict.fromkeys(texts) if t not in _embedding_cache]
+        # Caché por (modelo, texto): los subtópicos reutilizan los embeddings del nivel anterior
+        missing = [t for t in dict.fromkeys(texts) if (model_name, t) not in _embedding_cache]
         if missing:
-            vectors = _sentence_model().encode(
+            # Modelos como multilingual-e5 recomiendan prefijo "passage: ", pero encode directo
+            # funciona para todos los modelos de sentence-transformers.
+            vectors = _sentence_model(model_name).encode(
                 missing, normalize_embeddings=True, show_progress_bar=False
             )
-            _embedding_cache.update(zip(missing, vectors))
-        return np.vstack([_embedding_cache[t] for t in texts])
+            for t, v in zip(missing, vectors):
+                _embedding_cache[(model_name, t)] = v
+        return np.vstack([_embedding_cache[(model_name, t)] for t in texts])
 
     vectorizer = TfidfVectorizer(
         strip_accents="unicode",
@@ -52,18 +62,18 @@ def embed(texts: list[str], method: str = "tfidf", seed: int = 42) -> np.ndarray
     return normalize(X)
 
 
-_embedding_cache: dict[str, np.ndarray] = {}
+_embedding_cache: dict[tuple[str, str], np.ndarray] = {}
 
 
-@lru_cache(maxsize=1)
-def _sentence_model():
+@lru_cache(maxsize=4)
+def _sentence_model(model_name: str = DEFAULT_SENTENCE_MODEL):
     try:
         from sentence_transformers import SentenceTransformer
     except ImportError as e:
         raise ImportError(
             'EMBEDDINGS=sentence-transformers requiere: pip install -e ".[embeddings]"'
         ) from e
-    return SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+    return SentenceTransformer(model_name)
 
 
 def cluster(

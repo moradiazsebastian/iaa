@@ -9,7 +9,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
-    llm_provider: Literal["anthropic", "openai", "ollama", "none"] = "anthropic"
+    llm_provider: Literal["anthropic", "openai", "google_genai", "ollama", "none"] = "anthropic"
     llm_model: str = "claude-opus-5-5"
     llm_effort: Literal["low", "medium", "high"] | None = "low"
     llm_cache: bool = True
@@ -19,6 +19,7 @@ class Settings(BaseSettings):
     data_path: Path = Path("data/sample/tweets.csv")
     topic_model: Literal["kmeans", "lda", "bertopic"] = "kmeans"
     embeddings: Literal["tfidf", "sentence-transformers"] = "tfidf"  # solo para kmeans
+    embedding_model: str = "paraphrase-multilingual-MiniLM-L12-v2"
     max_llm_reassign: int = 120  # tope de mensajes dudosos que revisa el LLM por nivel
     seed: int = 42
 
